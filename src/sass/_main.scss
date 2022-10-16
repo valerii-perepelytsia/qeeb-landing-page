@@ -27,9 +27,13 @@ a {
   text-decoration: none;
 }
 
-list {
+ul {
   list-style: none;
   padding: 0;
+}
+
+button {
+  border: none;
 }
 
 .container {
@@ -44,7 +48,18 @@ list {
 
 .header-padding {
   @media (min-width: 375px) {
-    padding-top: 50px;
+    padding-top: 40px;
   }
-  padding-top: 40px;
+  @media (min-width: 1690px) {
+    padding: 50px 0 0 35px;
+  }
+}
+
+.header-margin {
+  @media (min-width: 375px) {
+    margin-right: 0;
+  }
+  @media (min-width: 1690px) {
+    margin-right: 35px;
+  }
 }

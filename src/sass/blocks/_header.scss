@@ -4,9 +4,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 800;
-  font-size: 24px;
   &__logo {
     display: flex;
     flex-direction: row;
@@ -17,23 +14,75 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: $color-white;
+    &_text {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+    }
+  }
+  &__navigation {
+    &_menu-list {
+      font-family: "Red Rose", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      display: flex;
+      flex-direction: row;
+      &_link {
+        color: $color-white;
+        text-transform: capitalize;
+      }
+      &_item {
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &_button {
+      font-family: "Red Rose", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      background-color: $color-turquoise;
+      border-radius: 50px;
+      text-transform: capitalize;
+      cursor: pointer;
+      padding: 15px 30px;
+    }
   }
 }
 
 @media (min-width: 327px) {
   .header {
     &__navigation {
+      &_menu-list {
+        display: none;
+      }
       &_mobile {
         display: flex;
+      }
+      &_button {
+        display: none;
       }
     }
   }
 }
+
 @media (min-width: 1690px) {
   .header {
     &__navigation {
+      &_menu-list {
+        display: flex;
+      }
       &_mobile {
         display: none;
+      }
+      &_button {
+        display: flex;
       }
     }
   }
