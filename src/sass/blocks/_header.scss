@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: $color-white;
+  }
+}
+
+@media (min-width: 327px) {
+  .header {
+    &__navigation {
+      &_mobile {
+        display: flex;
+      }
+    }
+  }
+}
+@media (min-width: 1690px) {
+  .header {
+    &__navigation {
+      &_mobile {
+        display: none;
+      }
+    }
+  }
+}

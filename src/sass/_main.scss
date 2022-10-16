@@ -4,7 +4,7 @@
 }
 
 .body {
-
+  background-color: $color-black;
 }
 
 .visually-hidden {
@@ -27,8 +27,24 @@ a {
   text-decoration: none;
 }
 
+list {
+  list-style: none;
+  padding: 0;
+}
+
 .container {
-  max-width: 1690px;
-  min-width: 327px;
+  @media (min-width: 375px) {
+    max-width: 325px;
+  }
+  @media (min-width: 1690px) {
+    max-width: 1690px;
+  }
   margin: 0 auto;
+}
+
+.header-padding {
+  @media (min-width: 375px) {
+    padding-top: 50px;
+  }
+  padding-top: 40px;
 }
