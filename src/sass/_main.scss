@@ -37,29 +37,24 @@ button {
 }
 
 .container {
-  @media (min-width: 375px) {
-    max-width: 325px;
-  }
-  @media (min-width: 1690px) {
+  @media (min-width: 1024px) {
     max-width: 1690px;
   }
+  max-width: 768px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
 .header-padding {
-  @media (min-width: 375px) {
-    padding-top: 40px;
-  }
-  @media (min-width: 1690px) {
+  @media (min-width: 1024px) {
     padding: 50px 0 0 35px;
   }
+  padding: 40px 0 0 24px;
 }
 
 .header-margin {
-  @media (min-width: 375px) {
-    margin-right: 0;
-  }
-  @media (min-width: 1690px) {
+  @media (min-width: 1024px) {
     margin-right: 35px;
   }
+  margin-right: 24px;
 }
