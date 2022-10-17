@@ -7,6 +7,10 @@
   background-color: $color-black;
 }
 
+.main {
+  flex: 1;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,6 +44,10 @@ button {
   @media (min-width: 1024px) {
     max-width: 1690px;
   }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 100vh;
   max-width: 768px;
   min-width: 320px;
   margin: 0 auto;

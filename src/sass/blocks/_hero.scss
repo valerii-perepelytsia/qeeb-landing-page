@@ -1,0 +1,94 @@
+.main {
+  &__hero {
+    font-family: 'Monument Extended', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    &_h1 {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: $color-white;
+    }
+    &_h2 {
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+    &_button {
+      font-family: 'Red Rose', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      border-radius: 50px;
+      background-color: $color-turquoise;
+      padding: 19px 39px;
+      text-transform: capitalize;
+    }
+    &_picture-container {
+      &_picture-emission {
+        position: relative;
+        &_picture {
+          position: relative;
+          z-index: 1;
+          &_image {
+
+          }
+        }
+        &_emission {
+          top: 50%;
+          left: 50%;
+          z-index: 0;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 301px;
+          height: 303px;
+          background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
+          filter: blur(50px);
+          border-radius: 50px;
+        }
+      }
+    }
+    &_creators {
+      position: relative;
+      &_icon-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+        &_image-1 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 0;
+        }
+        &_image-2 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 35px;
+        }
+        &_image-3 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 70px;
+        }
+      }
+      &_arrow {
+        position: absolute;
+        width: 95px;
+        height: 74px;
+        transform: rotate3d(2, 3, 0, 180deg);
+        top: 130px;
+        left: 10px;
+      }
+    }
+  }
+}
