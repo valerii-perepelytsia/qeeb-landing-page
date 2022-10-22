@@ -1,10 +1,6 @@
 .main {
   &__hero {
     font-family: 'Monument Extended', sans-serif;
-    //display: flex;
-    //flex-direction: column;
-    //flex-wrap: nowrap;
-    //align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, fit-content(1fr));
@@ -35,151 +31,34 @@
       margin-bottom: 32px;
       grid-area: heading-2;
     }
-    &_button-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      grid-area: button;
-      &_button {
-        font-family: 'Red Rose', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 0.02em;
-        border-radius: 50px;
-        background-color: $color-turquoise;
-        padding: 19px 39px;
-        text-transform: capitalize;
-        margin-bottom: 60px;
-      }
-    }
-    &_picture-container {
-      width: 322px;
-      height: 316px;
-      grid-area: image;
-      &_picture-emission {
-        position: relative;
-        &_picture {
-          position: relative;
-          z-index: 1;
-          &_image {
-            border-radius: 50px;
-          }
-        }
-        &_emission {
-          top: 50%;
-          left: 50%;
-          z-index: 0;
-          transform: translate(-50%, -50%);
-          position: absolute;
-          width: 301px;
-          height: 303px;
-          background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
-          filter: blur(50px);
-          border-radius: 50px;
-        }
-      }
-    }
-    &_creators {
-      grid-area: creators;
-      justify-self: end;
-      &_creators-container {
-        position: relative;
-        right: 90px;
-        &_icon-container {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          position: relative;
-          &_image-1 {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            top: 0;
-          }
-          &_image-2 {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            top: 35px;
-          }
-          &_image-3 {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            top: 70px;
-          }
-        }
-        &_arrow {
-          position: absolute;
-          width: 95px;
-          height: 74px;
-          transform: rotate3d(2, 3, 0, 180deg);
-          top: 130px;
-          left: 10px;
-        }
-      }
-    }
-    &_fun-facts {
-      grid-area: facts;
-      justify-self: start;
-      &_list {
-        &_items {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          margin-bottom: 32px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-          &_quantity {
-            font-family: 'Monument Extended', sans-serif;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 36px;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: $color-white;
-            margin-bottom: 8px;
-          }
-          &_fact {
-            font-family: 'Red Rose', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: #818698;
-          }
-        }
-      }
-    }
   }
 }
 
 @media (min-width: 1024px) {
   .main {
     &__hero {
-      &_picture-container {
-        width: 774px;
-        height: 757px;
-        &_picture-emission {
-          position: relative;
-          &_picture {
-            position: relative;
-            z-index: 1;
-            &_image {
-              border-radius: 180px;
-            }
-          }
-          &_emission {
-            width: 735px;
-            height: 719px;
-            border-radius: 180px;
-          }
-        }
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+              "heading-1 heading-1 image image"
+              "heading-2 heading-2 image image"
+              "button creators image image"
+              "facts facts image image";
+      &_h1 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        justify-self: start;
+        align-self: end;
+      }
+      &_h2 {
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 86px;
+        text-transform: uppercase;
+        text-align: left;
+        justify-self: start;
+        margin-bottom: 64px;
       }
     }
   }
