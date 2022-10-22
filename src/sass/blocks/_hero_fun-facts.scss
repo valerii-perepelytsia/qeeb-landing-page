@@ -1,0 +1,66 @@
+.main {
+  &__hero {
+    &_fun-facts {
+      grid-area: facts;
+      justify-self: start;
+      &_list {
+        &_items {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-bottom: 32px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &_quantity {
+            font-family: 'Monument Extended', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $color-white;
+            margin-bottom: 8px;
+          }
+          &_fact {
+            font-family: 'Red Rose', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #818698;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    &__hero {
+      &_fun-facts {
+        &_list {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          &_items {
+            margin-right: 116px;
+            margin-bottom: 0;
+            &:last-child {
+              margin-right: 0;
+            }
+            &_quantity {
+
+            }
+            &_fact {
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+}

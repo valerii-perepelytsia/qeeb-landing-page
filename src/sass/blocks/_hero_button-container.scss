@@ -1,0 +1,29 @@
+.main {
+  &__hero {
+    &_button-container {
+      grid-area: button;
+      &_button {
+        font-family: 'Red Rose', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        border-radius: 50px;
+        background-color: $color-turquoise;
+        padding: 19px 39px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    &__hero {
+      &_button-container {
+        justify-self: start;
+      }
+    }
+  }
+}
