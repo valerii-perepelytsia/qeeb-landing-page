@@ -31,6 +31,7 @@
             text-align: center;
             letter-spacing: 0.02em;
             color: #818698;
+            text-transform: capitalize;
           }
         }
       }
@@ -54,9 +55,6 @@
             }
             &_quantity {
 
-            }
-            &_fact {
-              text-transform: capitalize;
             }
           }
         }
