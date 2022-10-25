@@ -1,0 +1,37 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  &__button {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: -34px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #2C2D31;
+    &.right {
+      left: auto;
+      right: 34px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &.right {
+      transform: rotate(180deg) translate(50%, 50%);
+    }
+  }
+}
+
+@media (min-width: 1690px) {
+  .slider {
+    &__button {
+      display: flex;
+    }
+  }
+}
