@@ -1,35 +1,79 @@
 .main {
   &__top-collections {
     &_container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-family: 'Red Rose', sans-serif;
+      font-weight: 400;
+      gap: 30px;
+      justify-content: center;
       &_collection {
+        width: 32%;
         &_article {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #2C2D31;
+          border-radius: 30px;
+          padding: 10px;
           &_image-container {
+            display: flex;
+            position: relative;
             &_image {
-
+              border-radius: 30px;
             }
             &_quantity {
+              position: absolute;
+              top: 0;
+              right: -10px;
+              width: 34px;
+              height: 34px;
+              background-color: #52FFE0;
+              border-radius: 100%;
               &_digit {
-
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #2C2D31;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
               }
             }
           }
           &_main-container {
+            width: 50%;
             &_h3 {
-
+              font-size: 24px;
+              line-height: 30px;
+              color: $color-white;
             }
             &_paragraph {
-
+              font-size: 16px;
+              line-height: 20px;
+              color: #818698;
             }
           }
           &_stat-container {
+            width: 20%;
             &_bitcoin {
-
+              font-size: 16px;
+              line-height: 20px;
+              color: $color-white;
             }
             &_dollar {
-
+              font-size: 16px;
+              line-height: 20px;
+              color: #818698;
             }
             &_percent {
-
+              font-size: 14px;
+              line-height: 17px;
+              color: #52FFE0;
             }
           }
         }
