@@ -13,6 +13,10 @@
     }
     &_slider {
       width: 1690px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-bottom: 40px;
       &_slide-container {
         width: 245px;
         margin-right: 30px;
@@ -56,6 +60,11 @@
     &__popular-categories {
       &_h2 {
 
+      }
+      &_slider {
+        &_slide-container {
+
+        }
       }
     }
   }
