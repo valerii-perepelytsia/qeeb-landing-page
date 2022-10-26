@@ -1,0 +1,39 @@
+.main {
+  &__top-collections {
+    &_container {
+      &_collection {
+        &_article {
+          &_image-container {
+            &_image {
+
+            }
+            &_quantity {
+              &_digit {
+
+              }
+            }
+          }
+          &_main-container {
+            &_h3 {
+
+            }
+            &_paragraph {
+
+            }
+          }
+          &_stat-container {
+            &_bitcoin {
+
+            }
+            &_dollar {
+
+            }
+            &_percent {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

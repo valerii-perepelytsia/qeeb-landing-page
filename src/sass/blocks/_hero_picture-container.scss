@@ -7,6 +7,7 @@
         position: relative;
         &_play-button {
           display: none;
+          cursor: pointer;
         }
         &_picture {
           position: relative;
@@ -64,19 +65,17 @@
               background: rgba(129, 134, 152, 0.2);
               backdrop-filter: blur(25px);
               border-radius: 100px;
-              &_link {
-                &_text {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                }
-                &_play {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                }
+              &_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              &_play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
               }
             }
           }

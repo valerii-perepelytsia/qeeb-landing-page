@@ -1,0 +1,49 @@
+.main {
+  &__top-collections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &_header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      &_h2 {
+        font-family: 'Monument Extended', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $color-white;
+      }
+      &_switch {
+        font-family: 'Red Rose', sans-serif;
+        font-weight: 400;
+        background-color: #2C2D31;
+        border-radius: 20px;
+        &_button {
+          font-family: inherit;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.04em;
+          color: $color-white;
+          background-color: #1D1E22;
+          border-radius: 20px;
+        }
+      }
+    }
+    &_button {
+      font-family: 'Red Rose', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      letter-spacing: 0.02em;
+      color: #2C2D31;
+      background-color: $color-turquoise;
+      border-radius: 50px;
+    }
+  }
+}
