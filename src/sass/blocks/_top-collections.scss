@@ -8,6 +8,7 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
+      align-items: center;
       &_h2 {
         font-family: 'Monument Extended', sans-serif;
         font-weight: 400;
@@ -18,11 +19,17 @@
         color: $color-white;
       }
       &_switch {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 300px;
         font-family: 'Red Rose', sans-serif;
         font-weight: 400;
         background-color: #2C2D31;
         border-radius: 20px;
+        padding: 5px;
         &_button {
+          cursor: pointer;
           font-family: inherit;
           font-size: 16px;
           line-height: 20px;
@@ -30,6 +37,12 @@
           color: $color-white;
           background-color: #1D1E22;
           border-radius: 20px;
+          padding: 20px 47px;
+          text-transform: capitalize;
+        }
+        &_button.inactive {
+          background-color: #2C2D31;
+          padding: 20px 35px;
         }
       }
     }
