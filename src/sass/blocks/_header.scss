@@ -1,92 +1,80 @@
 .header {
   font-family: "Red Rose", sans-serif;
-  font-weight: 400;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  &__logo {
+  &__link {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     text-transform: capitalize;
     font-family: 'Gilroy', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
     color: $color-white;
-    &_image {
-      width: 32px;
-      height: 40px;
+    &_navigation {
+      color: $color-white;
+      text-transform: capitalize;
     }
-    &_text {
-      line-height: 29px;
-      text-align: center;
-      letter-spacing: 0.02em;
+    &_mobile {
+      display: flex;
     }
   }
-  &__navigation {
-    &_menu-list {
-      font-size: 18px;
-      line-height: 22px;
-      letter-spacing: 0.02em;
-      display: none;
-      &_link {
-        color: $color-white;
-        text-transform: capitalize;
-      }
-      &_item {
-        margin-right: 40px;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-      &_mobile {
-        display: flex;
-      }
+  &__image {
+    width: 32px;
+    height: 40px;
+  }
+  &__paragraph {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  &__list {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    display: none;
+  }
+  &__list-item {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
     }
-    &_button {
-      display: none;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      letter-spacing: 0.02em;
-      background-color: $color-turquoise;
-      border-radius: 50px;
-      text-transform: capitalize;
-      cursor: pointer;
-      padding: 15px 30px;
-    }
+  }
+  &__button {
+    display: none;
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    background-color: $color-turquoise;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 15px 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    &__logo {
-      &_image {
-        width: 46px;
-        height: 57px;
-      }
-      &_text {
-        font-size: 36px;
-        line-height: 44px;
-        text-align: center;
-        letter-spacing: 0.02em;
-      }
-    }
-    &__navigation {
-      &_menu-list {
-        display: flex;
-        flex-direction: row;
-      }
+    &__link {
       &_mobile {
         display: none;
       }
-      &_button {
-        display: flex;
-      }
+    }
+    &__svg-image {
+      width: 46px;
+      height: 57px;
+    }
+    &__paragraph {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &__list {
+      display: flex;
+    }
+    &__button {
+      display: flex;
     }
   }
 }
