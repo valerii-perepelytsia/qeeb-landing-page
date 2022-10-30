@@ -1,9 +1,11 @@
 .header {
-  font-family: "Red Rose", sans-serif;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  &__container {
+    font-family: "Red Rose", sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__link {
     display: flex;
     flex-direction: row;
