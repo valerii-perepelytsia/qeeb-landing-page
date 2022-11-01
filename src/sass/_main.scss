@@ -4,7 +4,7 @@
 }
 
 .body {
-  background-color: #1E1E1E;
+  background-color: #101010;
 }
 
 .main {
@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-.img-responsive {
+.responsive {
   max-width: 100%;
   height: auto;
 }
@@ -47,7 +47,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  min-height: 100vh;
+  //min-height: 100vh;
   max-width: 768px;
   min-width: 320px;
   margin: 0 auto;

@@ -1,71 +1,52 @@
-.main {
-  &__popular-categories {
-    overflow: hidden;
-    &_h2 {
-      font-family: 'Monument Extended', sans-serif;
-      font-weight: 400;
-      font-size: 24px;
-      color: $color-white;
-      line-height: 36px;
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    &_slider {
-      width: 1690px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      margin-bottom: 40px;
-      &_slide-container {
-        width: 245px;
-        margin-right: 30px;
-        &:last-child {
-          margin-right: 0;
-        }
-        &_slide {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: center;
-          background-color: #2C2D31;
-          border-radius: 50px;
-          padding: 10px;
-          &_link {
-            &_image {
-              border-radius: 50px;
-              margin-bottom: 50px;
-            }
-            &_h3 {
-              font-family: 'Red Rose', sans-serif;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 24px;
-              line-height: 30px;
-              text-align: center;
-              letter-spacing: 0.04em;
-              text-transform: capitalize;
-              color: $color-white;
-              margin-bottom: 50px;
-            }
-          }
-        }
-      }
+.popular-categories {
+  overflow: hidden;
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $color-white;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &__slider {
+    width: 1690px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+  }
+  &__slide-container {
+    width: 245px;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
     }
   }
-}
-
-@media (min-width: 1024px) {
-  .main {
-    &__popular-categories {
-      &_h2 {
-
-      }
-      &_slider {
-        &_slide-container {
-
-        }
-      }
-    }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #2C2D31;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  &__img {
+    border-radius: 50px;
+    margin-bottom: 50px;
+  }
+  &__h3 {
+    font-family: 'Red Rose', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $color-white;
+    margin-bottom: 50px;
   }
 }
