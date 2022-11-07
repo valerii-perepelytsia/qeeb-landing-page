@@ -1,0 +1,116 @@
+.tranding-nfts {
+  &.slider-margin {
+    @media (min-width: 1690px) {
+      margin-right: 0;
+    }
+    margin-right: 24px;
+  }
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0;
+  }
+  &__slide-container {
+    &.active {
+      display: block;
+    }
+    display: none;
+    width: 383px;
+  }
+  &__slide {
+    background-color: #1D1E22;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  &__image-container {
+
+  }
+  &__link {
+
+  }
+  &__image {
+
+  }
+  &__main-section {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+  &__h3 {
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-transform: capitalize;
+  }
+  &__paragraph {
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    &_price-section {
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+    }
+  }
+  &__price-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: $color-dark-grey;
+    border-radius: 20px;
+    padding: 16px 24px;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+  }
+  &__price {
+
+  }
+  &__h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #999999;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tranding-nfts {
+    &__h2 {
+      text-align: left;
+    }
+    &__slide {
+      display: block;
+    }
+    &__slide-container {
+      display: block;
+    }
+    &__slider {
+      justify-content: flex-start;
+      gap: 30px;
+    }
+  }
+}
