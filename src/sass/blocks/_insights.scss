@@ -1,0 +1,109 @@
+.insights {
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  &__idea {
+    &.active {
+      display: flex;
+    }
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 500px;
+  }
+  &__image-container {
+
+  }
+  &__link {
+
+  }
+  &__image {
+    border-radius: 50px;
+  }
+  &__heading-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__heading {
+    display: flex;
+  }
+  &__h3 {
+    display: block;
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #0A142F;
+    background: #F3F5F6;
+    box-shadow: 0 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 36px;
+    padding: 5px 12px;
+  }
+  &__paragraph {
+    &_author {
+      font-family: 'Red Rose', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #DFE5F5;
+    }
+    &_detail {
+      font-family: 'Red Rose', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 48px;
+      color: #FFFFFF;
+    }
+  }
+  &__detail-container {
+
+  }
+  &__link-container {
+    display: flex;
+  }
+  &__link {
+    &_more {
+      display: flex;
+      align-items: center;
+      font-family: 'Red Rose', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      border-radius: 30px;
+      padding: 19px;
+    }
+  }
+  &__svg {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .insights {
+    &__idea {
+      display: flex;
+    }
+  }
+}
