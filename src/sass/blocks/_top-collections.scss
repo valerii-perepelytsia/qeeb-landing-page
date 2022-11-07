@@ -1,70 +1,194 @@
-.main {
-  &__top-collections {
+.top-collections {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+  }
+  &__switch {
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 300px;
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    background-color: #2C2D31;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  &__button {
+    &_switch {
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      color: $color-white;
+      background-color: #1D1E22;
+      border-radius: 20px;
+      padding: 20px 47px;
+      text-transform: capitalize;
+    }
+    &_switch.inactive {
+      background-color: #2C2D31;
+      padding: 20px 35px;
+    }
+    &_all-collection {
+      font-family: 'Red Rose', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      letter-spacing: 0.02em;
+      color: #2C2D31;
+      background-color: $color-turquoise;
+      border-radius: 50px;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+  }
+  &__container {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: #1D1E22;
-    &_header {
-      display: flex;
-      flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    gap: 8px;
+    justify-content: center;
+  }
+  &__collection {
+    &.active {
+      display: block;
+    }
+    display: none;
+    width: 100%;
+  }
+  &__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2C2D31;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  &__image-container {
+    display: flex;
+    position: relative;
+  }
+  &__img {
+    border-radius: 30px;
+  }
+  &__quantity-container {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 34px;
+    height: 34px;
+    background-color: #52FFE0;
+    border-radius: 100%;
+  }
+  &__paragraph {
+    &_quantity {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #2C2D31;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &_floor {
+      font-size: 16px;
+      line-height: 20px;
+      color: #818698;
+    }
+    &_bitcoin {
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-white;
+    }
+    &_dollar {
+      font-size: 16px;
+      line-height: 20px;
+      color: #818698;
+    }
+    &_percent {
+      font-size: 14px;
+      line-height: 17px;
+      color: #52FFE0;
+    }
+  }
+  &__main-container {
+    width: 67%;
+    padding-left: 24px;
+  }
+  &__h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-white;
+  }
+  &__stat-container {
+    width: 100%;
+    padding-left: 124px;
+  }
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-collections {
+    &__article {
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: center;
-      &_h2 {
-        font-family: 'Monument Extended', sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: $color-white;
-      }
-      &_switch {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 300px;
-        font-family: 'Red Rose', sans-serif;
-        font-weight: 400;
-        background-color: #2C2D31;
-        border-radius: 20px;
-        padding: 5px;
-        &_button {
-          cursor: pointer;
-          font-family: inherit;
-          font-size: 16px;
-          line-height: 20px;
-          letter-spacing: 0.04em;
-          color: $color-white;
-          background-color: #1D1E22;
-          border-radius: 20px;
-          padding: 20px 47px;
-          text-transform: capitalize;
-        }
-        &_button.inactive {
-          background-color: #2C2D31;
-          padding: 20px 35px;
-        }
-      }
     }
-    &_button-container {
+    &__main-container {
+      width: 50%;
+      padding-left: 0;
+    }
+    &__stat-container {
+      width: 20%;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .top-collections {
+    &__header {
+      justify-content: space-between;
+    }
+    &__switch {
       display: flex;
-      justify-content: center;
-      align-self: center;
-      &_button {
-        font-family: 'Red Rose', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        text-transform: capitalize;
-        letter-spacing: 0.02em;
-        color: #2C2D31;
-        background-color: $color-turquoise;
-        border-radius: 50px;
-        padding: 15px 20px;
-        cursor: pointer;
-      }
+    }
+    &__container {
+      flex-direction: row;
+      gap: 30px;
+    }
+    &__collection {
+      display: block;
+      width: 32%;
     }
   }
 }
