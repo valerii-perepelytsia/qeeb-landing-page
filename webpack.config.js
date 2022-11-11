@@ -69,7 +69,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+                test: /\.(?:ico|gif|png|jpg|jpeg|webp|svg)$/i,
                 generator: {
                     filename: 'img/[name][ext]'
                 },
@@ -99,7 +99,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                test: /\.(woff(2)?|eot|ttf|otf|)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name][ext]'

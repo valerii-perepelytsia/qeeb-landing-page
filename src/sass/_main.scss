@@ -4,6 +4,9 @@
 }
 
 .body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-color: #101010;
 }
 
@@ -44,10 +47,6 @@ button {
   @media (min-width: 1024px) {
     max-width: 1690px;
   }
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  //min-height: 100vh;
   max-width: 768px;
   min-width: 375px;
   margin: 0 auto;
