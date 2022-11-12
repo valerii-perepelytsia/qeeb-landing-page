@@ -64,6 +64,17 @@
     &_emission {
       position: relative;
     }
+    &_creators {
+      position: relative;
+      right: 90px;
+    }
+    &_icon {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: relative;
+      margin-right: 15px;
+    }
   }
   &__a {
     display: block;
@@ -78,10 +89,6 @@
     padding: 19px 39px;
     text-transform: capitalize;
     cursor: pointer;
-  }
-  &__container.creators {
-    position: relative;
-    right: 90px;
   }
   &__picture {
     position: relative;
@@ -134,18 +141,11 @@
     grid-area: creators;
     justify-self: end;
   }
-  &__icon-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
-    margin-right: 15px;
-  }
   &__fun-facts {
     grid-area: facts;
     justify-self: start;
   }
-  &__item {
+  &__li {
     &_fun-facts {
       display: flex;
       flex-direction: column;
@@ -191,6 +191,10 @@
         max-width: 774px;
         max-height: 757px;
       }
+      &_creators {
+        width: 32em;
+        right: 0;
+      }
     }
     &__img {
       border-radius: 180px;
@@ -220,18 +224,14 @@
     &__creators {
       justify-self: start;
     }
-    &__container.creators {
-      width: 32em;
-      right: 0;
-    }
-    &__list {
+    &__ul {
       &_fun-facts {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
       }
     }
-    &__item {
+    &__li {
       &_fun-facts {
         margin-right: 116px;
         margin-bottom: 0;

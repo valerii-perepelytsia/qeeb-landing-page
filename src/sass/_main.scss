@@ -63,6 +63,12 @@ button {
     }
     padding: 65px 0 0 24px;
   }
+  &_popular-categories {
+    @media (min-width: 1024px) {
+      padding: 50px 0 0 35px;
+    }
+    padding: 48px 0 0 35px;
+  }
 }
 
 .margin {
@@ -76,6 +82,9 @@ button {
     }
     margin-right: 24px;
     margin-bottom: 32px;
+  }
+  &_popular-categories {
+    margin-bottom: 30px;
   }
 }
 
