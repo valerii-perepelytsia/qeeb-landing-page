@@ -1,0 +1,237 @@
+.footer {
+  background-color: #1D1E22;
+  &__container {
+    &_logo {
+      display: none;
+    }
+    &_form {
+      position: relative;
+      background-color: $color-turquoise;
+      border-radius: 30px;
+      padding: 80px 48px;
+      max-width: 495px;
+    }
+  }
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    &_form {
+      font-family: 'Monument Extended', sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.04em;
+      color: #1D1E22;
+      margin-bottom: 15px;
+    }
+    &_contact {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+  }
+  &__ul {
+    &_social {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+  &__li {
+    &_social {
+      display: none;
+      margin-right: 24px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &.mobile {
+        display: flex;
+      }
+    }
+  }
+  &__a {
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #DFE5F5;
+    &_social {
+      & svg path {
+        fill: white;
+      }
+      &:hover svg path {
+        fill: $color-turquoise;
+      }
+    }
+    &_contact {
+      font-family: inherit;
+      color: inherit;
+    }
+  }
+  &__form-section {
+    display: flex;
+    justify-content: center;
+  }
+  &__form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  &__nav {
+    display: none;
+  }
+  &__ornament-container {
+    display: none;
+  }
+  &__form {
+    border-bottom: 1px solid #3FC9B0;
+  }
+  &__input {
+    font-family: 'Red Rose', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1D1E22;
+    border: hidden;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 13px;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+  &__submit {
+    display: none;
+  }
+  &__basement-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  &__copyrights-container {
+    order: 3;
+  }
+  @mixin paragraph {
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #DFE5F5;
+    text-transform: capitalize;
+  }
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include paragraph;
+    &_copyrights {
+      @include paragraph;
+    }
+  }
+  &__span {
+    &_copyrights {
+      display: none;
+    }
+  }
+  &__contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+  &__section {
+
+  }
+  &__address {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #E0E5F3;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer {
+    &__container {
+      &_logo {
+        display: flex;
+        align-self: center;
+      }
+      &_form {
+        position: relative;
+        background-color: $color-turquoise;
+        border-radius: 30px;
+        padding: 80px 48px;
+        min-width: 327px;
+        max-width: 495px;
+      }
+    }
+    &__nav-section {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+    &__ornament-container {
+      display: flex;
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+    }
+    &__nav {
+      display: block;
+    }
+    &__basement-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+    &__copyrights-container {
+      order: 0;
+    }
+    &__paragraph {
+      display: block;
+    }
+    &__a {
+      &_social {
+        & svg path {
+          fill: #818698;
+        }
+        &:hover svg path {
+          fill: $color-turquoise;
+        }
+      }
+    }
+    &__li {
+      &_social {
+        display: flex;
+        &.mobile {
+          display: none;
+        }
+        &.desktop.mobile {
+          display: flex;
+        }
+      }
+    }
+    &__contact-section {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.download {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+  }
+  &__h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    margin-right: 0;
+  }
+  &__button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #2C2D31;
+    box-shadow: 0 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover svg path {
+      fill: #1D1E22;
+    }
+    &:hover {
+      color: #1D1E22;
+      background-color: $color-turquoise;
+    }
+    &.apple {
+      padding: 24px 68px;
+    }
+    &.android {
+      padding: 24px 59px;
+    }
+  }
+  &__svg {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .download {
+    &__section {
+      flex-direction: row;
+      background-color: #1D1E22;
+      border: 1px solid #000000;
+      padding-left: 72px;
+      padding-top: 96px;
+      padding-bottom: 95px;
+      margin-bottom: 48px;
+    }
+    &__h2 {
+      text-align: left;
+      font-size: 30px;
+      width: 36%;
+      margin-right: 200px;
+    }
+  }
+}

@@ -5,8 +5,8 @@
   grid-template-rows: repeat(5, fit-content(1fr));
   justify-items: center;
   grid-template-areas:
-  "heading-1 heading-1"
-  "heading-2 heading-2"
+  "heading heading"
+  "paragraph paragraph"
   "button button"
   "image image"
   "creators facts";
@@ -17,9 +17,9 @@
     letter-spacing: 0.04em;
     color: $color-white;
     margin-bottom: 16px;
-    grid-area: heading-1;
+    grid-area: heading;
   }
-  &__h2 {
+  &__p {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -28,111 +28,7 @@
     color: $color-white;
     width: 10em;
     margin-bottom: 32px;
-    grid-area: heading-2;
-  }
-  &__button-container {
-    grid-area: button;
-  }
-  &__button {
-    font-family: 'Red Rose', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    border-radius: 50px;
-    background-color: $color-turquoise;
-    padding: 19px 39px;
-    text-transform: capitalize;
-    cursor: pointer;
-    &_picture-container {
-      display: none;
-      cursor: pointer;
-    }
-  }
-  &__picture-container {
-    grid-area: image;
-    justify-self: center;
-  }
-  &__container.emission {
-    position: relative;
-  }
-  &__container.creators {
-    position: relative;
-    right: 90px;
-  }
-  &__picture {
-    position: relative;
-    z-index: 1;
-  }
-  &__img {
-    border-radius: 10%;
-    &_image-1 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 0;
-    }
-    &_image-2 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 35px;
-    }
-    &_image-3 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 70px;
-    }
-  }
-  &__svg-image {
-    &_arrow {
-      position: absolute;
-      width: 95px;
-      height: 74px;
-      transform: rotate3d(2, 3, 0, 180deg);
-      top: 130px;
-      left: 10px;
-    }
-  }
-  &__emission {
-    top: 50%;
-    left: 50%;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
-    filter: blur(50px);
-    border-radius: 10%;
-  }
-  &__creators {
-    grid-area: creators;
-    justify-self: end;
-  }
-  &__icon-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
-  }
-  &__fun-facts {
-    grid-area: facts;
-    justify-self: start;
-  }
-  &__item {
-    &_fun-facts {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin-bottom: 32px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  &__paragraph {
+    grid-area: paragraph;
     &_quantity {
       font-family: 'Monument Extended', sans-serif;
       font-weight: 400;
@@ -155,15 +51,120 @@
       text-transform: capitalize;
     }
   }
+  &__container {
+    &_a {
+      grid-area: button;
+      margin-bottom: 60px;
+    }
+    &_picture {
+      grid-area: image;
+      justify-self: center;
+      margin-bottom: 50px;
+    }
+    &_emission {
+      position: relative;
+    }
+    &_creators {
+      position: relative;
+      right: 90px;
+    }
+    &_icon {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: relative;
+      margin-right: 15px;
+    }
+  }
+  &__a {
+    display: block;
+    font-family: 'Red Rose', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    border-radius: 50px;
+    color: #2C2D31;
+    background-color: $color-turquoise;
+    padding: 19px 39px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  &__picture {
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    border-radius: 50px;
+    &_image-1 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0;
+    }
+    &_image-2 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 35px;
+    }
+    &_image-3 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 70px;
+    }
+  }
+  &__svg {
+    &_arrow {
+      position: absolute;
+      width: 95px;
+      height: 74px;
+      transform: rotate3d(2, 3, 0, 180deg);
+      top: 135px;
+      left: 10px;
+    }
+  }
+  &__emission {
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
+    filter: blur(50px);
+    border-radius: 10%;
+  }
+  &__creators {
+    grid-area: creators;
+    justify-self: end;
+  }
+  &__fun-facts {
+    grid-area: facts;
+    justify-self: start;
+  }
+  &__li {
+    &_fun-facts {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1564px) {
   .hero {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-            "heading-1 heading-1 image image"
-            "heading-2 heading-2 image image"
+            "heading heading image image"
+            "paragraph paragraph image image"
             "button creators image image"
             "facts facts image image";
     &__h1 {
@@ -173,7 +174,7 @@
       justify-self: start;
       align-self: end;
     }
-    &__h2 {
+    &__p {
       font-weight: 400;
       font-size: 72px;
       line-height: 86px;
@@ -182,12 +183,18 @@
       justify-self: start;
       margin-bottom: 64px;
     }
-    &__button-container {
-      justify-self: start;
-    }
-    &__picture-container {
-      max-width: 774px;
-      max-height: 757px;
+    &__container {
+      &_a {
+        justify-self: start;
+      }
+      &_picture {
+        max-width: 774px;
+        max-height: 757px;
+      }
+      &_creators {
+        width: 32em;
+        right: 0;
+      }
     }
     &__img {
       border-radius: 180px;
@@ -205,63 +212,26 @@
       height: 100%;
       border-radius: 180px;
     }
-    &__button {
-      &_picture-container {
-        @media (min-width: 1220px) {
-          display: block;
-          position: absolute;
-          z-index: 1;
-          bottom: -5px;
-          left: -100px;
-          width: 200px;
-          height: 200px;
-          background: rgba(129, 134, 152, 0.2);
-          backdrop-filter: blur(25px);
-          border-radius: 100px;
-        }
-      }
-    }
-    &__svg-image {
-      &_text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      &_play {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    &__svg {
       &_arrow {
         transform: none;
         top: 0;
         left: 130px;
         width: 125px;
         height: 119px;
-        @media (max-width: 1440px) {
-          top: -30px;
-          left: 160px;
-          transform: rotate(-20deg);
-        }
       }
     }
     &__creators {
       justify-self: start;
     }
-    &__container.creators {
-      width: 32em;
-      right: 0;
-    }
-    &__list {
+    &__ul {
       &_fun-facts {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
       }
     }
-    &__item {
+    &__li {
       &_fun-facts {
         margin-right: 116px;
         margin-bottom: 0;
