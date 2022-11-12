@@ -6,12 +6,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__link {
-    &_navigation {
+  &__a {
+    &_li {
       color: $color-white;
       text-transform: capitalize;
     }
-    &_mobile {
+    &_svg {
       display: flex;
     }
   }
@@ -19,13 +19,13 @@
     width: 32px;
     height: 40px;
   }
-  &__list {
+  &__ul {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     display: none;
   }
-  &__list-item {
+  &__li {
     margin-right: 40px;
     &:last-child {
       margin-right: 0;
@@ -46,12 +46,12 @@
 
 @media (min-width: 1024px) {
   .header {
-    &__link {
-      &_mobile {
+    &__a {
+      &_svg {
         display: none;
       }
     }
-    &__list {
+    &__ul {
       display: flex;
     }
     &__button {

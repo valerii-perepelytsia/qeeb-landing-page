@@ -1,0 +1,42 @@
+@mixin img-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play-button {
+  display: none;
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  border-radius: 50px;
+  background-color: $color-turquoise;
+  padding: 19px 39px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+@media (min-width: 1564px) {
+  .play-button {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: rgba(129, 134, 152, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 100px;
+    &__img {
+      &_text {
+        @include img-position;
+      }
+      &_play {
+        @include img-position;
+      }
+    }
+  }
+}

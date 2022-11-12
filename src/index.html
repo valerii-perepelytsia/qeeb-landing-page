@@ -5,34 +5,56 @@
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preload" href="./fonts/gilroy-latin-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/gilroy-latin-extrabold.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+        <link rel="preload" href="./fonts/red-rose-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/red-rose-v14-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+        <link rel="preload" href="./fonts/red-rose-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/red-rose-v14-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+        <link rel="preload" href="./fonts/monument-extended-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/monument-extended-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+        <link rel="preload" href="./fonts/red-hat-display-v14-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/red-hat-display-v14-latin-500.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+        <link rel="preload" href="./fonts/red-hat-display-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--        <link rel="preload" href="./fonts/red-hat-display-v14-latin-600.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/bebas-neue-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/bebas-neue-v9-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-500.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-600.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+<!--        <link rel="preload" href="./fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
         <title>Qeeb</title>
     </head>
     <body class="body">
 <!--            BEGIN header section-->
         <header class="header">
             <div class="container">
-                <div class="header__container header-padding header-margin">
+                <div class="header__container padding margin">
                     <a href="#" class="logo__a">
                         <img src="./img/logo.svg" alt="logo" class="logo__image">
                         <p class="logo__paragraph">qeeb</p>
                     </a>
-                    <nav class="header__navigation">
-                        <ul class="header__list">
-                            <li class="header__list-item">
-                                <a href="#" class="header__link_navigation">explore</a>
+                    <nav class="header__nav">
+                        <ul class="header__ul">
+                            <li class="header__li">
+                                <a href="#" class="header__a_li">explore</a>
                             </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__link_navigation">collections</a>
+                            <li class="header__li">
+                                <a href="#" class="header__a_li">collections</a>
                             </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__link_navigation">creators</a>
+                            <li class="header__li">
+                                <a href="#" class="header__a_li">creators</a>
                             </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__link_navigation">blog</a>
+                            <li class="header__li">
+                                <a href="#" class="header__a_li">blog</a>
                             </li>
                         </ul>
-                        <a href="#" class="header__link_mobile">
-                            <svg class="header__svg-image_hamburger" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#" class="header__a_svg">
+                            <svg class="header__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1_62)">
                                     <path d="M26.6667 24.1667H3.33333C3.11232 24.1667 2.90036 24.0789 2.74408 23.9226C2.5878 23.7663 2.5 23.5543 2.5 23.3333C2.5 23.1123 2.5878 22.9004 2.74408 22.7441C2.90036 22.5878 3.11232 22.5 3.33333 22.5H26.6667C26.8877 22.5 27.0996 22.5878 27.2559 22.7441C27.4122 22.9004 27.5 23.1123 27.5 23.3333C27.5 23.5543 27.4122 23.7663 27.2559 23.9226C27.0996 24.0789 26.8877 24.1667 26.6667 24.1667Z" fill="white"/>
                                     <path d="M26.6667 15.8334H3.33333C3.11232 15.8334 2.90036 15.7456 2.74408 15.5893C2.5878 15.4331 2.5 15.2211 2.5 15.0001C2.5 14.7791 2.5878 14.5671 2.74408 14.4108C2.90036 14.2545 3.11232 14.1667 3.33333 14.1667H26.6667C26.8877 14.1667 27.0996 14.2545 27.2559 14.4108C27.4122 14.5671 27.5 14.7791 27.5 15.0001C27.5 15.2211 27.4122 15.4331 27.2559 15.5893C27.0996 15.7456 26.8877 15.8334 26.6667 15.8334Z" fill="white"/>
@@ -56,44 +78,23 @@
 <!--            BEGIN hero-->
             <div class="main-block__container_hero">
                 <div class="container">
-                    <section class="hero header-padding header-margin">
+                    <section class="hero padding_hero margin_hero">
                         <h1 class="hero__h1">NFT Marketplace</h1>
-                        <h2 class="hero__h2">collect rare digital artworks</h2>
-                        <div class="hero__button-container">
-                            <button class="hero__button" type="button">explore</button>
+                        <p class="hero__p">collect rare digital artworks</p>
+                        <div class="hero__container_a">
+                            <a href="#" class="hero__a">explore</a>
                         </div>
-                        <div class="hero__picture-container">
-                            <div class="hero__container emission">
+                        <div class="hero__container_picture">
+                            <div class="hero__container_emission">
                                 <picture class="hero__picture">
                                     <source srcset="./img/header-image.jpg" media="(min-width: 1024px)">
                                     <img class="hero__img responsive" src="./img/header-image.jpg" alt="header-image">
                                 </picture>
                                 <div class="hero__emission"></div>
-                                <button class="hero__button_picture-container" type="button">
-                                    <svg class="hero__svg-image_text" width="181" height="179" viewBox="0 0 181 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M121.872 8.10758L119.037 16.0318L114.67 5.53158L110.995 4.21664L107.222 14.7622L109.934 15.7323L112.763 7.82307L117.12 18.3029L120.811 19.6232L124.583 9.07762L121.872 8.10758Z" fill="white"/>
-                                        <path d="M144.365 24.04L145.817 22.1094L136.356 14.991L129.622 23.9408L131.924 25.6723L134.03 22.8723L140.423 27.682L141.885 25.7387L135.493 20.9289L137.205 18.6531L144.365 24.04Z" fill="white"/>
-                                        <path d="M162.976 41.3605L154.83 30.2711L152.883 31.7014L156.103 36.0856L149.024 41.2859L150.729 43.607L157.808 38.4066L161.029 42.7909L162.976 41.3605Z" fill="white"/>
-                                        <path d="M176.834 84.1618L176.374 80.3012L167.97 76.5824L175.263 70.9912L174.803 67.1305L163.682 68.4571L164.023 71.3168L171.649 70.4072L164.574 75.9401L164.821 78.0054L172.998 81.719L165.372 82.6287L165.713 85.4884L176.834 84.1618Z" fill="white"/>
-                                        <path d="M162.905 107.899L162.168 110.996L174.405 107.957L175.305 104.174L165.748 95.9609L165.014 99.0427L167.055 100.762L165.502 107.284L162.905 107.899ZM168.893 102.302L172.783 105.58L167.836 106.738L168.893 102.302Z" fill="white"/>
-                                        <path d="M158.081 134.951C160.21 136.254 162.499 135.61 163.826 133.44L168.42 125.934L158.867 120.088L157.364 122.544L159.916 124.106L157.494 128.064L153.998 128.044L152.227 130.937L156.143 130.914C155.863 132.506 156.525 133.999 158.081 134.951ZM164.856 127.129L162.183 131.496C161.732 132.233 161.031 133.38 159.584 132.495C158.151 131.618 158.853 130.471 159.304 129.734L161.976 125.367L164.856 127.129Z" fill="white"/>
-                                        <path d="M142.315 157.157L145.638 154.323L147.943 144.722L151.712 149.141L153.903 147.272L146.635 138.751L144.444 140.62L145.835 142.251L144.848 146.395L138.077 146.051L135.046 148.636L144.247 148.969L142.315 157.157Z" fill="white"/>
-                                        <path d="M119.532 166.814L120.423 168.922L131.328 164.31L126.966 153.994L116.061 158.606L116.952 160.713L125.204 157.223L126.089 159.316L117.837 162.806L118.647 164.722L126.899 161.232L127.784 163.324L119.532 166.814Z" fill="white"/>
-                                        <path d="M95.1612 174.103L108.841 172.622L108.581 170.22L103.173 170.806L102.227 162.073L99.3635 162.383L100.309 171.116L94.901 171.701L95.1612 174.103Z" fill="white"/>
-                                        <path d="M73.8422 172.371L82.4778 174.064L84.6326 163.074L81.8064 162.519L81.2307 165.456L75.4213 164.317C72.9249 163.827 70.9056 165.062 70.4254 167.511C69.9452 169.96 71.3457 171.882 73.8422 172.371ZM75.7416 166.841L80.7659 167.826L80.1164 171.139L75.0921 170.154C74.2442 169.988 72.9253 169.73 73.2516 168.065C73.5748 166.417 74.8937 166.675 75.7416 166.841Z" fill="white"/>
-                                        <path d="M59.4216 158.731L55.3925 166.536L57.9516 167.857L63.089 157.905L52.8524 152.621L51.7442 154.768L59.4216 158.731Z" fill="white"/>
-                                        <path d="M36.678 139.657L34.41 137.422L30.6748 149.465L33.4443 152.194L45.4195 148.27L43.1629 146.047L40.6349 146.903L35.8595 142.197L36.678 139.657ZM38.3665 147.678L33.5474 149.308L35.1183 144.477L38.3665 147.678Z" fill="white"/>
-                                        <path d="M23.3182 132.582C26.6451 130.9 27.5199 128.091 25.2963 123.693C23.2822 119.709 20.7437 118.482 17.7151 119.691L19.0362 122.304C20.7868 121.724 22.0646 122.655 23.1402 124.783C24.4541 127.382 24.0748 128.972 22.0187 130.011C19.9768 131.044 18.4928 130.414 17.1717 127.801C16.0888 125.659 16.089 124.099 17.5798 123.04L16.2587 120.427C13.5043 122.143 13.0015 124.907 15.0156 128.891C17.2391 133.289 20.0055 134.256 23.3182 132.582Z" fill="white"/>
-                                        <path d="M7.77009 98.3133L5.51556 98.7032L7.53343 110.37L18.5696 108.461L16.5517 96.7944L14.2972 97.1844L15.8242 106.013L13.5855 106.401L12.0584 97.5716L10.0089 97.9261L11.5359 106.755L9.29712 107.142L7.77009 98.3133Z" fill="white"/>
-                                        <path d="M20.7822 60.1763L18.568 61.3131C17.8967 60.5258 16.9393 59.949 15.7208 59.5572C12.2022 58.4258 9.60112 59.8247 8.09747 64.5009C6.58893 69.1923 7.87686 71.825 11.4107 72.9613C14.9597 74.1025 17.5559 72.7188 19.0644 68.0274C19.5689 66.4585 19.7622 65.1257 19.659 63.9832L22.0947 62.7328L20.7822 60.1763ZM12.2923 70.2195C10.1141 69.5192 9.47669 68.1041 10.3975 65.2405C11.3183 62.3769 12.6762 61.6035 14.8392 62.299C17.0173 62.9994 17.6803 64.4394 16.7644 67.2878C15.8485 70.1362 14.4857 70.9248 12.2923 70.2195Z" fill="white"/>
-                                        <path d="M25.1118 36.408L23.246 35.0838L16.3932 44.7391L25.5266 51.2215L32.3794 41.5661L30.5136 40.2419L25.3277 47.5486L23.4749 46.2336L28.6608 38.9269L26.9646 37.723L21.7787 45.0298L19.926 43.7148L25.1118 36.408Z" fill="white"/>
-                                        <path d="M41.8693 20.344L40.4391 18.5581L31.1975 25.9594L38.1987 34.7014L47.4403 27.3002L46.01 25.5143L39.0164 31.1153L37.5962 29.3419L44.5898 23.7409L43.2896 22.1174L36.296 27.7184L34.8757 25.945L41.8693 20.344Z" fill="white"/>
-                                        <path d="M64.0986 11.9403C64.3885 11.1535 64.4021 10.3217 64.1124 9.59312C63.5036 8.06172 62.2962 7.14707 59.9322 8.08697L50.7735 11.7283L54.9114 22.1359L64.4269 18.3527C66.791 17.4128 67.3085 15.7263 66.6109 13.9718C66.1321 12.7675 65.2094 12.1357 64.0986 11.9403ZM54.2182 12.5971L59.7343 10.404C60.4628 10.1144 61.117 9.85429 61.5426 10.9248C61.9741 12.0101 61.3199 12.2702 60.6063 12.554L60.5914 12.5599L55.0754 14.753L54.2182 12.5971ZM62.9511 16.5461L56.766 19.0052L55.8911 16.8048L62.0762 14.3457C62.7899 14.0619 63.4441 13.8018 63.8815 14.9021C64.3189 16.0023 63.6647 16.2624 62.9511 16.5461Z" fill="white"/>
-                                    </svg>
-                                    <svg class="hero__svg-image_play-button" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5603 23.2497C1.31166 23.2497 1.07321 23.1509 0.89739 22.9751C0.721575 22.7993 0.622803 22.5609 0.622803 22.3122V1.68722C0.622831 1.52431 0.66531 1.36422 0.746053 1.22272C0.826796 1.08123 0.943017 0.963221 1.08326 0.880325C1.2235 0.797428 1.38292 0.752507 1.54581 0.74999C1.70871 0.747472 1.86944 0.787445 2.01218 0.865968L20.7622 11.1785C20.9092 11.2594 21.0317 11.3783 21.1171 11.5227C21.2025 11.6672 21.2475 11.8319 21.2475 11.9997C21.2475 12.1675 21.2025 12.3322 21.1171 12.4767C21.0317 12.6211 20.9092 12.74 20.7622 12.821L2.01218 23.1335C1.87376 23.2097 1.71832 23.2497 1.5603 23.2497Z" fill="white"/>
-                                    </svg>
-                                </button>
+                                <a class="play-button" type="button">
+                                    <img src="./img/circle-text.svg" alt="circle-text" class="play-button__img_text">
+                                    <img src="./img/play.svg" alt="play" class="play-button__img_play">
+                                </a>
                             </div>
                         </div>
                         <div class="hero__creators">
@@ -103,7 +104,7 @@
                                     <img class="hero__img_image-2" src="./img/artist-icon-2.png" alt="artist-icon-2">
                                     <img class="hero__img_image-3" src="./img/artist-icon-3.png" alt="artist-icon-3">
                                 </div>
-                                <svg class="hero__svg-image_arrow" width="146" height="120" viewBox="0 0 146 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="hero__svg_arrow" width="146" height="120" viewBox="0 0 146 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M119.666 91.423C120.698 72.7245 116.768 53.9602 102.376 40.065C89.3859 27.5231 71.762 25.1597 63.3776 43.6589C59.4085 52.416 60.8412 65.2717 69.7115 70.8408C79.5937 77.0453 87.3225 67.4889 87 60C86.2469 42.5088 56.6781 44.2536 36.5 43.6589C12.6044 42.9547 0.852925 21.698 0.999961 21.6289" stroke="white" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M136.351 77.7485C134.253 78.321 132.627 79.6527 130.933 80.9029C125.372 85.0077 120.748 91.107 119.633 97.8446C118.38 90.5722 114.17 81.552 106.601 78.7139" stroke="white" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -112,16 +113,16 @@
                         <div class="hero__fun-facts">
                             <ul class="hero__list_fun-facts">
                                 <li class="hero__item_fun-facts">
-                                    <p class="hero__paragraph_quantity">50k</p>
-                                    <p class="hero__paragraph_fact">artwork</p>
+                                    <p class="hero__p_quantity">50k</p>
+                                    <p class="hero__p_fact">artwork</p>
                                 </li>
                                 <li class="hero__item_fun-facts">
-                                    <p class="hero__paragraph_quantity">35k</p>
-                                    <p class="hero__paragraph_fact">auction</p>
+                                    <p class="hero__p_quantity">35k</p>
+                                    <p class="hero__p_fact">auction</p>
                                 </li>
                                 <li class="hero__item_fun-facts">
-                                    <p class="hero__paragraph_quantity">23k+</p>
-                                    <p class="hero__paragraph_fact">artist</p>
+                                    <p class="hero__p_quantity">23k+</p>
+                                    <p class="hero__p_fact">artist</p>
                                 </li>
                             </ul>
                         </div>
@@ -132,7 +133,7 @@
 <!--            BEGIN popular-categories-->
             <div class="main-block__container_popular-categories">
                 <div class="container">
-                    <section class="popular-categories header-padding">
+                    <section class="popular-categories padding">
                         <h2 class="popular-categories__h2">popular categories</h2>
                         <div class="slider">
                             <div class="popular-categories__slider">
@@ -757,10 +758,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="footer__contact-section">
+                            <section class="footer__section">
+                                <h2 class="footer__h2_contact">office</h2>
+                                <address class="footer__address">
+                                    <p class="footer__paragraph_contact">545, Street 11, Block F</p>
+                                    <p class="footer__paragraph_contact">California, U.S.A</p>
+                                </address>
+                            </section>
+                            <section class="footer__section">
+                                <h2 class="footer__h2_contact">contact</h2>
+                                <address class="footer__address">
+                                    <p class="footer__paragraph_contact">
+                                        <a href="tel:+923023003215" class="footer__a_contact">+92 302 300 3215</a>
+                                    </p>
+                                    <p class="footer__paragraph_contact">
+                                        <a href="mailto:ouraddress@email.com" class="footer__a_contact">ouraddress@email.com</a>
+                                    </p>
+                                </address>
+                            </section>
+                        </div>
                     </div>
                     <div class="footer__basement-section">
                         <div class="footer__copyrights-container">
-                            <p class="footer__paragraph">
+                            <p class="footer__paragraph_copyrights">
                                 <span class="footer__span_copyrights_desktop">qeeb 2022.</span>
                                 <span class="footer__span_copyrights">copyright 2022.</span>
                                 all rights reserved
@@ -775,42 +796,42 @@
                         </div>
                         <div class="footer__social">
                             <ul class="footer__ul_social">
-                                <li class="footer__li_social mobile">
+                                <li class="footer__li_social desktop mobile">
                                     <a href="#" class="footer__a_social">
                                         <svg class="footer__svg" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M23.25 2.13258C22.406 2.4993 21.513 2.74091 20.5992 2.84976C21.5595 2.28744 22.2817 1.39409 22.6303 0.337264C21.7224 0.868166 20.7307 1.24067 19.6978 1.43883C19.2629 0.982981 18.7397 0.620344 18.1603 0.372957C17.5808 0.125569 16.9571 -0.0014007 16.327 -0.000236203C13.7761 -0.000236203 11.7117 2.03414 11.7117 4.54195C11.7099 4.89078 11.7499 5.23857 11.8308 5.57789C10.0016 5.49214 8.2104 5.02551 6.57187 4.20785C4.93333 3.3902 3.48351 2.23953 2.31516 0.829451C1.90527 1.52044 1.6885 2.30885 1.6875 3.11226C1.6875 4.68726 2.50922 6.07945 3.75 6.89508C3.01487 6.87763 2.29481 6.68306 1.65094 6.32789V6.38414C1.65094 8.58726 3.24469 10.4201 5.35406 10.8373C4.9574 10.943 4.54864 10.9966 4.13812 10.9966C3.84683 10.9971 3.5562 10.9689 3.27047 10.9123C3.85687 12.717 5.56359 14.0295 7.58531 14.067C5.94252 15.333 3.9256 16.0173 1.85156 16.0123C1.48341 16.0117 1.11561 15.9898 0.75 15.9466C2.85993 17.2939 5.31255 18.0066 7.81594 17.9998C16.3172 17.9998 20.9616 11.0763 20.9616 5.07164C20.9616 4.87476 20.9564 4.67789 20.947 4.4857C21.8485 3.84448 22.6283 3.04763 23.25 2.13258Z" fill="#818698"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="footer__li_social mobile">
+                                <li class="footer__li_social desktop mobile">
                                     <a href="#" class="footer__a_social">
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 11.0637C21.5 5.26528 16.7984 0.563721 11 0.563721C5.20156 0.563721 0.5 5.26528 0.5 11.0637C0.5 16.3043 4.33906 20.6483 9.35938 21.4367V14.0998H6.69266V11.0637H9.35938V8.75044C9.35938 6.11934 10.9273 4.66481 13.3255 4.66481C14.4744 4.66481 15.6763 4.87013 15.6763 4.87013V7.45435H14.3516C13.048 7.45435 12.6402 8.26341 12.6402 9.09497V11.0637H15.552L15.087 14.0998H12.6406V21.4376C17.6609 20.6497 21.5 16.3058 21.5 11.0637Z" fill="#818698"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="footer__li_social">
+                                <li class="footer__li_social desktop">
                                     <a href="#" class="footer__a_social">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.99999 6.87579C8.27968 6.87579 6.87577 8.2797 6.87577 10C6.87577 11.7203 8.27968 13.1242 9.99999 13.1242C11.7203 13.1242 13.1242 11.7203 13.1242 10C13.1242 8.2797 11.7203 6.87579 9.99999 6.87579ZM19.3703 10C19.3703 8.70626 19.382 7.42423 19.3094 6.13283C19.2367 4.63283 18.8945 3.30158 17.7976 2.2047C16.6984 1.10548 15.3695 0.765639 13.8695 0.692982C12.5758 0.620326 11.2937 0.632045 10.0023 0.632045C8.70858 0.632045 7.42655 0.620326 6.13515 0.692982C4.63515 0.765639 3.3039 1.10783 2.20702 2.2047C1.1078 3.30392 0.767958 4.63283 0.695302 6.13283C0.622645 7.42658 0.634364 8.70861 0.634364 10C0.634364 11.2914 0.622645 12.5758 0.695302 13.8672C0.767958 15.3672 1.11015 16.6985 2.20702 17.7953C3.30624 18.8945 4.63515 19.2344 6.13515 19.307C7.4289 19.3797 8.71093 19.368 10.0023 19.368C11.2961 19.368 12.5781 19.3797 13.8695 19.307C15.3695 19.2344 16.7008 18.8922 17.7976 17.7953C18.8969 16.6961 19.2367 15.3672 19.3094 13.8672C19.3844 12.5758 19.3703 11.2938 19.3703 10ZM9.99999 14.807C7.33983 14.807 5.19296 12.6602 5.19296 10C5.19296 7.33986 7.33983 5.19298 9.99999 5.19298C12.6601 5.19298 14.807 7.33986 14.807 10C14.807 12.6602 12.6601 14.807 9.99999 14.807ZM15.0039 6.11876C14.3828 6.11876 13.8812 5.6172 13.8812 4.99611C13.8812 4.37501 14.3828 3.87345 15.0039 3.87345C15.625 3.87345 16.1266 4.37501 16.1266 4.99611C16.1267 5.14359 16.0978 5.28966 16.0415 5.42595C15.9851 5.56224 15.9024 5.68607 15.7981 5.79036C15.6939 5.89464 15.57 5.97733 15.4337 6.03368C15.2974 6.09004 15.1514 6.11895 15.0039 6.11876Z" fill="#818698"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="footer__li_social">
+                                <li class="footer__li_social desktop">
                                     <a href="#" class="footer__a_social">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.429 6.969H11.143V8.819C11.678 7.755 13.05 6.799 15.111 6.799C19.062 6.799 20 8.917 20 12.803V20H16V13.688C16 11.475 15.465 10.227 14.103 10.227C12.214 10.227 11.429 11.572 11.429 13.687V20H7.429V6.969ZM0.57 19.83H4.57V6.799H0.57V19.83ZM5.143 2.55C5.14315 2.88528 5.07666 3.21724 4.94739 3.52659C4.81812 3.83594 4.62865 4.11651 4.39 4.352C3.9064 4.83262 3.25181 5.10165 2.57 5.1C1.88939 5.09954 1.23631 4.8312 0.752 4.353C0.514211 4.11671 0.325386 3.83582 0.196344 3.52643C0.0673015 3.21704 0.000579132 2.88522 0 2.55C0 1.873 0.27 1.225 0.753 0.747C1.23689 0.268158 1.89024 -0.000299211 2.571 2.50265e-07C3.253 2.50265e-07 3.907 0.269 4.39 0.747C4.872 1.225 5.143 1.873 5.143 2.55Z" fill="#818698"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="footer__li_social">
+                                <li class="footer__li_social desktop">
                                     <a href="#" class="footer__a_social">
                                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M16.59 4.69C15.5932 4.47079 14.6914 3.94144 14.0141 3.17789C13.3368 2.41435 12.9188 1.45587 12.82 0.44V0H9.37002V13.67C9.37072 14.2766 9.18056 14.868 8.82646 15.3604C8.47237 15.8529 7.9723 16.2215 7.39709 16.414C6.82187 16.6065 6.20068 16.6131 5.6215 16.4329C5.04232 16.2527 4.53452 15.8948 4.17002 15.41C3.84347 14.9808 3.64351 14.4689 3.59275 13.932C3.54199 13.3951 3.64247 12.8548 3.8828 12.372C4.12314 11.8892 4.49375 11.4834 4.95274 11.2003C5.41172 10.9172 5.94075 10.7681 6.48002 10.77C6.77826 10.7683 7.07502 10.8121 7.36002 10.9V7.4C7.02836 7.35893 6.69413 7.34222 6.36002 7.35C5.12933 7.38288 3.93494 7.77393 2.92311 8.47527C1.91127 9.1766 1.12591 10.1578 0.663199 11.2986C0.200485 12.4395 0.0805013 13.6905 0.31794 14.8986C0.555378 16.1066 1.13993 17.2191 2.00002 18.1C2.88151 18.9962 4.00952 19.6101 5.24072 19.8638C6.47192 20.1175 7.75074 19.9994 8.91468 19.5246C10.0786 19.0498 11.0752 18.2397 11.7776 17.1973C12.4801 16.1548 12.8569 14.9271 12.86 13.67V6.67C14.2515 7.66395 15.92 8.19565 17.63 8.19V4.79C17.2941 4.79139 16.959 4.75787 16.63 4.69H16.59Z" fill="#818698"/>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="footer__li_social">
+                                <li class="footer__li_social desktop">
                                     <a href="#" class="footer__a_social">
                                         <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M21.0617 2.93984C20.9422 2.49462 20.7078 2.0886 20.382 1.76243C20.0563 1.43625 19.6505 1.20136 19.2055 1.08125C17.5672 0.640625 11 0.640625 11 0.640625C11 0.640625 4.43281 0.640625 2.79453 1.07891C2.34927 1.19862 1.94334 1.43339 1.61751 1.75962C1.29169 2.08586 1.05744 2.49208 0.938281 2.9375C0.5 4.57812 0.5 8 0.5 8C0.5 8 0.5 11.4219 0.938281 13.0602C1.17969 13.9648 1.89219 14.6773 2.79453 14.9188C4.43281 15.3594 11 15.3594 11 15.3594C11 15.3594 17.5672 15.3594 19.2055 14.9188C20.1102 14.6773 20.8203 13.9648 21.0617 13.0602C21.5 11.4219 21.5 8 21.5 8C21.5 8 21.5 4.57813 21.0617 2.93984ZM8.91406 11.1406V4.85938L14.3516 7.97656L8.91406 11.1406Z" fill="#818698"/>

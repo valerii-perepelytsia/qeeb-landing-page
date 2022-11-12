@@ -5,8 +5,8 @@
   grid-template-rows: repeat(5, fit-content(1fr));
   justify-items: center;
   grid-template-areas:
-  "heading-1 heading-1"
-  "heading-2 heading-2"
+  "heading heading"
+  "paragraph paragraph"
   "button button"
   "image image"
   "creators facts";
@@ -17,9 +17,9 @@
     letter-spacing: 0.04em;
     color: $color-white;
     margin-bottom: 16px;
-    grid-area: heading-1;
+    grid-area: heading;
   }
-  &__h2 {
+  &__p {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -28,33 +28,56 @@
     color: $color-white;
     width: 10em;
     margin-bottom: 32px;
-    grid-area: heading-2;
+    grid-area: paragraph;
+    &_quantity {
+      font-family: 'Monument Extended', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $color-white;
+      margin-bottom: 8px;
+    }
+    &_fact {
+      font-family: 'Red Rose', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: #818698;
+      text-transform: capitalize;
+    }
   }
-  &__button-container {
-    grid-area: button;
+  &__container {
+    &_a {
+      grid-area: button;
+      margin-bottom: 60px;
+    }
+    &_picture {
+      grid-area: image;
+      justify-self: center;
+      margin-bottom: 50px;
+    }
+    &_emission {
+      position: relative;
+    }
   }
-  &__button {
+  &__a {
+    display: block;
     font-family: 'Red Rose', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     border-radius: 50px;
+    color: #2C2D31;
     background-color: $color-turquoise;
     padding: 19px 39px;
     text-transform: capitalize;
     cursor: pointer;
-    &_picture-container {
-      display: none;
-      cursor: pointer;
-    }
-  }
-  &__picture-container {
-    grid-area: image;
-    justify-self: center;
-  }
-  &__container.emission {
-    position: relative;
   }
   &__container.creators {
     position: relative;
@@ -65,7 +88,7 @@
     z-index: 1;
   }
   &__img {
-    border-radius: 10%;
+    border-radius: 50px;
     &_image-1 {
       position: absolute;
       width: 50px;
@@ -85,13 +108,13 @@
       top: 70px;
     }
   }
-  &__svg-image {
+  &__svg {
     &_arrow {
       position: absolute;
       width: 95px;
       height: 74px;
       transform: rotate3d(2, 3, 0, 180deg);
-      top: 130px;
+      top: 135px;
       left: 10px;
     }
   }
@@ -116,6 +139,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
+    margin-right: 15px;
   }
   &__fun-facts {
     grid-area: facts;
@@ -132,38 +156,15 @@
       }
     }
   }
-  &__paragraph {
-    &_quantity {
-      font-family: 'Monument Extended', sans-serif;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 36px;
-      text-align: center;
-      letter-spacing: 0.02em;
-      color: $color-white;
-      margin-bottom: 8px;
-    }
-    &_fact {
-      font-family: 'Red Rose', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      letter-spacing: 0.02em;
-      color: #818698;
-      text-transform: capitalize;
-    }
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1564px) {
   .hero {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-            "heading-1 heading-1 image image"
-            "heading-2 heading-2 image image"
+            "heading heading image image"
+            "paragraph paragraph image image"
             "button creators image image"
             "facts facts image image";
     &__h1 {
@@ -173,7 +174,7 @@
       justify-self: start;
       align-self: end;
     }
-    &__h2 {
+    &__p {
       font-weight: 400;
       font-size: 72px;
       line-height: 86px;
@@ -182,12 +183,14 @@
       justify-self: start;
       margin-bottom: 64px;
     }
-    &__button-container {
-      justify-self: start;
-    }
-    &__picture-container {
-      max-width: 774px;
-      max-height: 757px;
+    &__container {
+      &_a {
+        justify-self: start;
+      }
+      &_picture {
+        max-width: 774px;
+        max-height: 757px;
+      }
     }
     &__img {
       border-radius: 180px;
@@ -205,46 +208,13 @@
       height: 100%;
       border-radius: 180px;
     }
-    &__button {
-      &_picture-container {
-        @media (min-width: 1220px) {
-          display: block;
-          position: absolute;
-          z-index: 1;
-          bottom: -5px;
-          left: -100px;
-          width: 200px;
-          height: 200px;
-          background: rgba(129, 134, 152, 0.2);
-          backdrop-filter: blur(25px);
-          border-radius: 100px;
-        }
-      }
-    }
-    &__svg-image {
-      &_text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      &_play {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    &__svg {
       &_arrow {
         transform: none;
         top: 0;
         left: 130px;
         width: 125px;
         height: 119px;
-        @media (max-width: 1440px) {
-          top: -30px;
-          left: 160px;
-          transform: rotate(-20deg);
-        }
       }
     }
     &__creators {
