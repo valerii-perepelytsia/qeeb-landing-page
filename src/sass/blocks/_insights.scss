@@ -3,12 +3,11 @@
     font-family: 'Monument Extended', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 36px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
+    color: #D9D9D9;
+    margin-bottom: 40px;
   }
   &__container {
     display: flex;
@@ -25,7 +24,7 @@
     width: 500px;
   }
   &__image-container {
-
+    margin-bottom: 32px;
   }
   &__link {
 
@@ -36,7 +35,9 @@
   &__heading-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 14px;
+    margin-bottom: 20px;
   }
   &__heading {
     display: flex;
@@ -57,7 +58,6 @@
     &_author {
       font-family: 'Bebas Neue', sans-serif;
       font-style: normal;
-      font-weight: 700;
       font-size: 16px;
       line-height: 16px;
       color: #DFE5F5;
@@ -70,6 +70,7 @@
       line-height: 48px;
       text-align: center;
       color: #FFFFFF;
+      margin-bottom: 29px;
     }
   }
   &__detail-container {
@@ -94,6 +95,7 @@
       border: 1px solid #FFFFFF;
       border-radius: 30px;
       padding: 19px;
+      margin-bottom: 80px;
     }
   }
   &__svg {
@@ -104,6 +106,10 @@
 @media (min-width: 1024px) {
   .insights {
     &__h2 {
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       text-align: left;
     }
     &__idea {

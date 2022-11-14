@@ -2,7 +2,10 @@
   flex: 1;
   &__container {
     &_collections {
-      background-color: #1D1E22;
+      background-color: inherit;
+      @media (min-width: 1024px) {
+        background-color: #1D1E22;
+      }
     }
     &_insights {
       background-color: #1D1E22;
