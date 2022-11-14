@@ -1,69 +1,91 @@
+@mixin slider-button {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: -34px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #2C2D31;
+}
+@mixin dots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .slider {
   position: relative;
-  &__dot-buttons-group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-right: 35px;
-    &_item {
-      margin-right: 15px;
-      &:last-child {
-        margin-right: 0;
-      }
-      &_button {
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-        border: 1px solid $color-white;
-        border-radius: 100%;
-        background-color: #1E1E1E;
-        &.active {
-          border: 1px solid #7F1CFC;
-          background-color: #7F1CFC;
-        }
-      }
+  &__ul {
+    @include dots;
+    &_popular-categories {
+      @include dots;
+      margin-right: 35px;
+    }
+  }
+  &__li {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
     }
   }
   &__button {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    left: -34px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: #2C2D31;
-    &.right {
+    @include slider-button;
+    &_dot {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $color-white;
+      border-radius: 100%;
+      background-color: #1E1E1E;
+      &.active {
+        border: 1px solid #7F1CFC;
+        background-color: #7F1CFC;
+      }
+    }
+    &_right {
+      @include slider-button;
       left: auto;
       right: 0;
+      &:hover {
+        background-color: #52FFE0;
+      }
+      &:hover .slider__svg_right path {
+        fill: #1D1E22;
+      }
     }
     &:hover {
       background-color: #52FFE0;
     }
-    &:hover .slider__arrow path {
+    &:hover .slider__svg path {
       fill: #1D1E22;
     }
   }
-  &__arrow {
+  &__svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    &.right {
-      transform: rotate(180deg) translate(50%, 50%);
+    &_right {
+      transform: rotate(180deg) translate(-50%, -150%);
     }
   }
 }
 
 @media (min-width: 1690px) {
   .slider {
-    &__dot-buttons-group {
+    &__ul {
       display: none;
+      &_popular-categories {
+        display: none;
+      }
     }
     &__button {
       display: flex;
+      &_right {
+        display: flex;
+      }
     }
   }
 }

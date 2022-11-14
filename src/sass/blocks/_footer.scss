@@ -8,7 +8,7 @@
       position: relative;
       background-color: $color-turquoise;
       border-radius: 30px;
-      padding: 80px 48px;
+      padding: 55px 47px;
       max-width: 495px;
     }
   }
@@ -20,13 +20,12 @@
     color: #FFFFFF;
     text-transform: capitalize;
     &_form {
-      font-family: 'Monument Extended', sans-serif;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 29px;
-      letter-spacing: 0.04em;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
       color: #1D1E22;
-      margin-bottom: 15px;
+      margin-bottom: 44px;
     }
     &_contact {
       font-family: 'Inter', sans-serif;
@@ -36,6 +35,7 @@
       text-align: center;
       text-transform: capitalize;
       color: #FFFFFF;
+      margin-bottom: 16px;
     }
   }
   &__ul {
@@ -79,6 +79,7 @@
   &__form-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 37px;
   }
   &__form-container {
     display: flex;
@@ -100,17 +101,17 @@
     border-bottom: 1px solid #3FC9B0;
   }
   &__input {
-    font-family: 'Red Rose', sans-serif;
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #1D1E22;
     border: hidden;
     outline: none;
     background-color: transparent;
     width: 100%;
-    margin-bottom: 13px;
+    letter-spacing: -0.213333px;
+    color: #1D1E22;
+    margin-bottom: 18px;
     &::placeholder {
       opacity: 1;
     }
@@ -142,11 +143,15 @@
     @include paragraph;
     &_copyrights {
       @include paragraph;
+      margin-bottom: 30px;
     }
   }
   &__span {
     &_copyrights {
       display: none;
+    }
+    &_tac {
+      margin-bottom: 14px;
     }
   }
   &__contact-section {
@@ -163,6 +168,13 @@
     line-height: 30px;
     text-align: center;
     color: #E0E5F3;
+    margin-bottom: 40px;
+  }
+  &__terms-and-conditions {
+    margin-bottom: 15px;
+  }
+  &__social {
+    margin-bottom: 38px;
   }
 }
 
@@ -195,6 +207,25 @@
     }
     &__nav {
       display: block;
+    }
+    &__h2 {
+      &_form {
+        font-family: 'Monument Extended', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.04em;
+        color: #1D1E22;
+        margin-bottom: 15px;
+      }
+    }
+    &__input {
+      font-family: 'Red Rose', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #1D1E22;
+      margin-bottom: 13px;
     }
     &__basement-section {
       display: flex;

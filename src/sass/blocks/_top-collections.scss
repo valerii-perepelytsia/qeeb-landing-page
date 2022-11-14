@@ -12,18 +12,21 @@
   &__h2 {
     font-family: 'Monument Extended', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 36px;
+    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    text-align: center;
-    color: $color-white;
+    color: #FFFFFF;
+    width: 87%;
+    margin-bottom: 20px;
   }
   &__switch {
     display: none;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 300px;
+    min-width: 311px;
+    max-width: 340px;
     font-family: 'Red Rose', sans-serif;
     font-weight: 400;
     background-color: #2C2D31;
@@ -40,7 +43,7 @@
       color: $color-white;
       background-color: #1D1E22;
       border-radius: 20px;
-      padding: 20px 47px;
+      padding: 20px 45px;
       text-transform: capitalize;
     }
     &_switch.inactive {
@@ -70,6 +73,7 @@
     font-weight: 400;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 45px;
   }
   &__collection {
     &.active {
@@ -158,6 +162,11 @@
 
 @media (min-width: 1024px) {
   .top-collections {
+    &__h2 {
+      font-size: 30px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
     &__article {
       flex-wrap: nowrap;
       justify-content: space-between;
@@ -178,6 +187,8 @@
   .top-collections {
     &__header {
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: 45px;
     }
     &__switch {
       display: flex;
@@ -185,6 +196,7 @@
     &__container {
       flex-direction: row;
       gap: 30px;
+      margin-bottom: 73px;
     }
     &__collection {
       display: block;

@@ -54,37 +54,86 @@ button {
 
 .padding {
   @media (min-width: 1024px) {
-    padding: 50px 0 0 35px;
+    padding: 36px 0 0 59px;
   }
   padding: 48px 0 0 24px;
   &_hero {
     @media (min-width: 1024px) {
-      padding: 50px 0 0 35px;
+      padding: 70px 0 0 58px;
     }
     padding: 65px 0 0 24px;
   }
   &_popular-categories {
     @media (min-width: 1024px) {
-      padding: 50px 0 0 35px;
+      padding: 72px 0 0 57px;
     }
     padding: 48px 0 0 35px;
+  }
+  &_top-collections {
+    @media (min-width: 1024px) {
+      padding: 120px 0 0 55px;
+    }
+    padding: 0 0 0 24px;
+  }
+  &_tranding-nfts {
+    @media (min-width: 1024px) {
+      padding: 50px 0 0 35px;
+    }
+    padding: 48px 0 0 22px;
+  }
+  &_insights {
+    @media (min-width: 1024px) {
+      padding: 50px 0 0 35px;
+    }
+    padding: 77px 0 0 31px;
+  }
+  &_download {
+    @media (min-width: 1024px) {
+      padding: 50px 0 0 35px;
+    }
+    padding: 77px 0 0 20px;
   }
 }
 
 .margin {
   @media (min-width: 1024px) {
-    margin-right: 35px;
+    margin-right: 10px;
   }
   margin-right: 24px;
   &_hero {
     @media (min-width: 1024px) {
-      margin-right: 35px;
+      margin-right: 0;
+      margin-bottom: 0;
     }
     margin-right: 24px;
     margin-bottom: 32px;
   }
   &_popular-categories {
-    margin-bottom: 30px;
+    @media (min-width: 1024px) {
+      margin-right: -23px;
+      margin-bottom: 65px;
+    }
+    margin-bottom: 80px;
+  }
+  &_top-collections {
+    @media (min-width: 1024px) {
+      margin-right: 0;
+    }
+    margin-right: 24px;
+    margin-bottom: 32px;
+  }
+  &_insights {
+    @media (min-width: 1024px) {
+      margin-right: 35px;
+    }
+    margin-right: 30px;
+  }
+  &_download {
+    @media (min-width: 1024px) {
+      margin-right: 35px;
+    }
+    margin-right: 20px;
+    margin-bottom: 74px;
   }
 }
 

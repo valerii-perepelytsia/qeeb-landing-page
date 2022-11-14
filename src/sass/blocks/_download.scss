@@ -18,6 +18,12 @@
     color: #FFFFFF;
     width: 100%;
     margin-right: 0;
+    margin-bottom: 25px;
+  }
+  &__button-container {
+    &_margin {
+      margin-bottom: 24px;
+    }
   }
   &__button {
     display: flex;
@@ -55,6 +61,12 @@
 
 @media (min-width: 1300px) {
   .download {
+    &__button-container {
+      &_margin {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
     &__section {
       flex-direction: row;
       background-color: #1D1E22;
@@ -69,6 +81,7 @@
       font-size: 30px;
       width: 36%;
       margin-right: 200px;
+      margin-bottom: 0;
     }
   }
 }
